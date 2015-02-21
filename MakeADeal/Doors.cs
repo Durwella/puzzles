@@ -29,6 +29,12 @@ namespace MakeADeal
         Prize[] Doors { get; }
     }
 
+    interface IPlayer
+    {
+        IGameState Game { get; set; }
+        int PickDoor();
+    }
+
     class GameState : IGameState
     {
         public Prize[] Doors { get; private set; }
@@ -37,12 +43,6 @@ namespace MakeADeal
         {
             Doors = doors;
         }
-    }
-
-    interface IPlayer
-    {
-        IGameState Game { get; set; }
-        int PickDoor();
     }
 
     class GameShowHost
@@ -123,12 +123,7 @@ namespace MakeADeal
         public void ShouldOptimizeChancesOfWinning()
         {
             const int attempts = 10000;
-            int wins = 0;
-            for(int i = 0; i < attempts; i++)
-            {
-                if (PlayGame())
-                    wins++;
-            }
+            int wins = Enumerable.Range(0, attempts).Count(i => PlayGame());
             var ratio = wins / (float)attempts;
             ratio.Should().BeGreaterOrEqualTo( 0.50f );
         }
