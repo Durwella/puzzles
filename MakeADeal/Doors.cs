@@ -89,7 +89,11 @@ namespace MakeADeal
 
         public int PickDoor()
         {
-            return -1;
+            if (Game.Doors.All(d => d == Prize.Unknown))
+                return 0;
+            else
+                // Always switch the door
+                return Array.LastIndexOf(Game.Doors, Prize.Unknown);
         }
     }
 
@@ -125,7 +129,7 @@ namespace MakeADeal
             const int attempts = 10000;
             int wins = Enumerable.Range(0, attempts).Count(i => PlayGame());
             var ratio = wins / (float)attempts;
-            ratio.Should().BeGreaterOrEqualTo( 0.50f );
+            ratio.Should().BeGreaterOrEqualTo( .65f );
         }
     }
 }
