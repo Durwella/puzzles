@@ -105,7 +105,7 @@ namespace FindYourNumber
             const int attempts = 10000;
             int wins = Enumerable.Range(0, attempts).Count(i => PlayGame());
             var ratio = wins / (float)attempts;
-            ratio.Should().BeGreaterOrEqualTo( 0.59f );
+            ratio.Should().BeGreaterOrEqualTo( 0.29f );
         }
     }
 }
