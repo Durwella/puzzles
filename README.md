@@ -14,6 +14,7 @@ Good puzzles are likely to:
 ## The Puzzles
 
 - [Goats and Teslas](MakeADeal/Doors.cs)
+- [Find your Number](FindYourNumber/NumberFinding.cs)
 
 ## Contributing
 

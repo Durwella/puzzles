@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LICENSE = LICENSE
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindYourNumber", "FindYourNumber\FindYourNumber.csproj", "{72204401-8110-4020-A6CF-A837A1286A57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,6 +21,10 @@ Global
 		{363FBC53-9E7E-4BD7-8B2F-7B411294A43D}.Debug|x86.Build.0 = Debug|x86
 		{363FBC53-9E7E-4BD7-8B2F-7B411294A43D}.Release|x86.ActiveCfg = Release|x86
 		{363FBC53-9E7E-4BD7-8B2F-7B411294A43D}.Release|x86.Build.0 = Release|x86
+		{72204401-8110-4020-A6CF-A837A1286A57}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{72204401-8110-4020-A6CF-A837A1286A57}.Debug|x86.Build.0 = Debug|Any CPU
+		{72204401-8110-4020-A6CF-A837A1286A57}.Release|x86.ActiveCfg = Release|Any CPU
+		{72204401-8110-4020-A6CF-A837A1286A57}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
