@@ -30,13 +30,23 @@ namespace FindYourNumber
 
     class Person : IPerson
     {
-        public int Number { get; set; }
+        int _number;
+        public int Number {
+            get { return _number; }
+            set { 
+                _number = value; 
+                _next = _number - 1; 
+            }
+        }
+
         public IBoxRoom BoxRoom { get; set; }
 
         public void PickBox()
         {
-            BoxRoom.OpenBox(0);
+            _next = BoxRoom.OpenBox(_next) - 1;
         }
+
+        int _next;
     }
 
     class BoxRoom : IBoxRoom
