@@ -14,6 +14,7 @@ Good puzzles are likely to:
 ## The Puzzles
 
 - [Goats and Teslas](MakeADeal/Doors.cs)
+- [Find your Number](FindYourNumber/NumberFinding.cs)
 
 ## Contributing
 
@@ -27,4 +28,6 @@ Pull requests are welcome if the following conditions are met:
 - A link to the source file should be added to the list above
 - The source code is entirely your original work and you consent to releasing it under the MIT license
 - A plain description of the puzzle should appear at the top of the source file
+
+[![Build status](https://ci.appveyor.com/api/projects/status/79svf13bm6slyhbu?svg=true)](https://ci.appveyor.com/project/jfoshee/puzzles)
 
