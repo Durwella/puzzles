@@ -15,7 +15,7 @@ Good puzzles are likely to:
 
 - [Goats and Teslas](MakeADeal/Doors.cs)
 - [Find your Number](FindYourNumber/NumberFinding.cs)
-- [Boy/Girl Paradox](FamilyParadox/FamilyParadox.cs)
+- [Boy/Girl Paradox](FamilyParadox/Family.cs)
 
 ## Contributing
 
