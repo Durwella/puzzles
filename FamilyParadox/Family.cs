@@ -7,7 +7,7 @@ using NUnit.Framework;
 namespace FamilyParadox
 {
     /*
-     * A guy at a bar says has two kids and at least one is a girl.
+     * A guy at a bar says he has two kids and at least one is a girl.
      * What are the chances that both are girls?
      * He then says that one is named Julie. Now what are the chances that both are girls?
      * 
